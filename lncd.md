@@ -28,7 +28,7 @@
   * [tutorial](http://www-cs-students.stanford.edu/~blynn/gitmagic/)
   * Matlab has built in menus for git
   * workflow (outside of any editor integration)
-  ```bash
+  ```sh
   git init # only once in the root folder of files to be tracked
 
   # add single file
@@ -52,6 +52,28 @@
 * See [`org-babel`](http://orgmode.org/worg/org-contrib/babel/) for emacs
 * [Rmarkdown](http://rmarkdown.rstudio.com/)
 
+## fMRI
+### AFNI
+[AFNI](https://afni.nimh.nih.gov/) consist of over 900 tools. Some highlights:
+* `3dDeconvolve` is _the_ command for first level analysis.
+* `3dTcat`, `3dBucket` combine and subset datasets
+* `3dcalc`,`3drefit`,`3dresample`, `1d_tool.py` manipulate data
+* `3dBrickStat`, `3dmaskave`,`3dinfo`,`3dNotes` extract data
+* most tools can use 4d selectors `['1#Coeff',3]` and value selectors `<3,4>` appended to dataset names. 
+  ```sh
+  # non-zero mean at first volume in roi 4
+  3dBrickStat -mean -non-zero -mask 'mymask.nii.gz<4>' 'mystat.nii.gz[1]'
+  # same as
+  3dROIstats -nzmean -mask mymask.nii.gz'<4>' mystat.nii.gz[1] 
+
+  # 3info, just the number of time points 
+  3dinfo -nt mydata.nii.gz
+  ```
+### reading in NI files w/programming languages
+* python:`nipy` 
+* R:`oro.nifti` 
+* matlab:`spm` 
+
 # Site Specific
 ## The UPMC Firewall
 * Use [Box](box.com) Sync (supported by upmc)
@@ -59,7 +81,7 @@
 ### remote connect 
 * https://accessprd.upmc.com/  + [MobaXterm](http://mobaxterm.mobatek.net/) in your `M:` dirve
 * Triple hop ssh: 
-  ```bash
+  ```sh
   ssh unix.cssd.pitt.edu
   ssh web-server.mrctr.upmc.edu
   ssh rhea.wpic.upmc.edu
