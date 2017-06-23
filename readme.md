@@ -11,7 +11,7 @@
 [Meta Neuro Papers](#Papers)
 ##
 ## Analysis 
-* Start with a clear and universal directory structure for organizing your analysis, data, figures, etc. [Here](http://nikola.me/folder_structure.html) is a template you can follow for a transparent directory structure.  
+* Start with a clear and universal directory structure for organizing your analysis, data, figures, etc. [Here](http://nikola.me/folder_structure.html) is a template you can follow for a transparent directory structure.  For MR, see [BIDS](#Doing fMRI) below.
 
 * [Atom](https://atom.io/) is very powerful and free text editor that integrates seamlessly with github. 
 Use it for writing experimental code, scanner code, bash scripts and so on. 
@@ -25,7 +25,7 @@ Use it for writing experimental code, scanner code, bash scripts and so on.
 
 * [Here](https://unsupervisedmethods.com/cheat-sheet-of-machine-learning-and-python-and-math-cheat-sheets-a4afe4e791b6) is an extremely well curated series of quick references for data science in python (numpy, scipy, pandas), ML algorithms, probability and more 
 ##  Programming 
-* Start using github. It is excellent for version control and for sharing (instead of having analysis_v4_p3.2_final.py you just have analysis.py). Other researchers can replicate exactly what you did. This will save you time, if someone emails you for example. 
+* Start using [github](https://github.com/). It is excellent for version control and for sharing (instead of having `analysis_v4_p3.2_final.py` you just have `analysis.py` with an explorable history). Other researchers can replicate exactly what you did. This will save you time, if someone emails you for example. 
 
 * You or your lab may be most familiar with Matlab. It is worth considering a switch to [Python](https://www.python.org/). Python offers simpler syntax, enables system wide interfacing, is open source, free and for these reasons is being used by more and more scientists. Replication is far easier with Python than Matlab. 
 
@@ -73,7 +73,7 @@ rsync -zavr -e ssh --delete --include '*/' --include='*include_these_files.[ext]
 
 * Your stats question may have an answer over [here](https://stats.stackexchange.com/) on cross-validated
 
-  ###  Statistics blogs
+###  Statistics blogs
   * [While my MCMC gently samples](http://twiecki.github.io/)
 
   * [Pythonic perambulations](http://jakevdp.github.io/)
@@ -87,7 +87,7 @@ rsync -zavr -e ssh --delete --include '*/' --include='*include_these_files.[ext]
 * Share your work with your friends as well as your enemies, the latter might give you even better criticism.
 
 * Steven Pinker has some interesting thoughts on how to make academic writing [better](http://stevenpinker.com/files/pinker/files/why_academics_stink_at_writing.pdf)
-##  Doing fMRI
+##Doing fMRI
 * Organize your dataset using the [BIDS format](http://bids.neuroimaging.io/) - this will make your data more accessible to both your collaborators and the field at large. 
 
 * If you can not write down the general linear model you are using from scratch and solve it in closed form, [learn how](http://www.brainvoyager.com/bvqx/doc/UsersGuide/StatisticalAnalysis/TheGeneralLinearModel.html).  
@@ -114,9 +114,9 @@ rsync -zavr -e ssh --delete --include '*/' --include='*include_these_files.[ext]
 ## Papers
 * [Neuroscience Needs Behavior](http://www.cell.com/neuron/pdf/S0896-6273(16)31040-6.pdf)
 * [Could a Neuroscientist Understand a Microprocessor](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005268)
+
 ##  Meetings 
 * Never show up empty handed to meetings with your PI.
 * Have a clear objective to all meetings that everyone else knows as well.
 * Be able to show some evidence of your productivity. 
-
 * You will have some days or weeks where nothing worked. I found that in those cases it is productive to have a "rainy day" folder containing interesting analyses/figures you have not yet shown. 
