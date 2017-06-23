@@ -87,7 +87,8 @@ rsync -zavr -e ssh --delete --include '*/' --include='*include_these_files.[ext]
 * Share your work with your friends as well as your enemies, the latter might give you even better criticism.
 
 * Steven Pinker has some interesting thoughts on how to make academic writing [better](http://stevenpinker.com/files/pinker/files/why_academics_stink_at_writing.pdf)
-##Doing fMRI
+
+## Doing fMRI
 * Organize your dataset using the [BIDS format](http://bids.neuroimaging.io/) - this will make your data more accessible to both your collaborators and the field at large. 
 
 * If you can not write down the general linear model you are using from scratch and solve it in closed form, [learn how](http://www.brainvoyager.com/bvqx/doc/UsersGuide/StatisticalAnalysis/TheGeneralLinearModel.html).  
